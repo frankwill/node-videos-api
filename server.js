@@ -89,5 +89,6 @@ server.delete('/videos/:id', (request, reply) => {
 
 // Definindo a porta que o servidor node vai ouvir nossas requisições http
 server.listen({
+  host: '0.0.0.0',
   port: process.env.PORT ?? 3333,
 })
